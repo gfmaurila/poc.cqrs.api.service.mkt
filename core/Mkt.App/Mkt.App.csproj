@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Commands\Users - Cópia\**" />
+    <EmbeddedResource Remove="Commands\Users - Cópia\**" />
+    <None Remove="Commands\Users - Cópia\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mkt.Core\Mkt.Core.csproj" />
+    <ProjectReference Include="..\Mkt.Infra\Mkt.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
