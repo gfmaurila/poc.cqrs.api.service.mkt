@@ -63,7 +63,7 @@ public class Config
         services.AddScoped<IMessageBusService, MessageBusService>();
         services.AddScoped<ISendGridProducer, SendGridProducer>();
         services.AddScoped<ITwilioWhatsAppProducer, TwilioWhatsAppProducer>();
-        services.AddHostedService<SendGridGenerateCodeResetConsumer>();
-        services.AddHostedService<TwilioGenerateCodeResetConsumer>();
+        //services.AddHostedService<SendGridGenerateCodeResetConsumer>();
+        //services.AddHostedService<TwilioGenerateCodeResetConsumer>();
     }
 }

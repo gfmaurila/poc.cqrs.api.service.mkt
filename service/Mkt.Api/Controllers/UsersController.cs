@@ -1,11 +1,9 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Mkt.Api.Models;
 using Mkt.App.Commands.Users.CreateUser;
 using Mkt.App.Commands.Users.UpdateUser;
 using Mkt.App.Queries.Users.GetUser;
-using Mkt.Core.Entities;
 using System.Threading.Tasks;
 
 namespace Mkt.Api.Controllers;

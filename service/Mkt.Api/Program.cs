@@ -20,11 +20,10 @@ builder.Host.UseSerilog((context, config) =>
     config.ReadFrom.Configuration(builder.Configuration);
 });
 var app = builder.Build();
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
+
+// app.ApplyMigrations();
 
 app.UseSwagger();
 app.UseSwaggerUI();
